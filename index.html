@@ -31,7 +31,7 @@
     <div class="wrap">
       <div class="brand">Verbull</div>
       <h1>Privacy Policy</h1>
-      <div class="eff">Effective date: August 20, 2026</div>
+      <div class="eff">Effective date: September 29, 2026</div>
     </div>
   </header>
   <main>
@@ -52,7 +52,7 @@
       <li><strong>On-device.</strong> Your bookmarks, quiz/flashcard progress, activity stats, streaks, and
         settings are stored on your device. They are never transmitted to us <strong>unless you sign in</strong>, in
         which case they are also backed up to your account so they survive a new phone (see below).</li>
-      <li><strong>Signing in is opt-in.</strong> The social features require <strong>Sign in with Apple</strong>. Only
+      <li><strong>Signing in is opt-in.</strong> The social features require signing in with <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>. Only
         then do we collect the limited information described below, and only to make the social features work.</li>
       <li><strong>No ads, no trackers, no cross-app tracking, no third-party analytics SDKs.</strong></li>
     </ul>
@@ -71,13 +71,13 @@
     <h2>Signing in (optional)</h2>
     <p>Verbull includes optional social features — a friends feed, challenges and duels, a co-op weekly board, and a
       global leaderboard — plus a backup of your progress. To use them you sign in with
-      <strong>Sign in with Apple</strong>. If (and only if) you sign in, we collect and store the following
+      <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>. If (and only if) you sign in, we collect and store the following
       to operate those features:</p>
     <ul>
-      <li><strong>Your name</strong> — as provided by Sign in with Apple the first time you sign in. If it isn't
+      <li><strong>Your name</strong> — as provided by Apple or Google the first time you sign in. If it isn't
         provided, a default display name ("Player") is used. Friends and game opponents see this name; you can change
         it any time in Settings → Account.</li>
-      <li><strong>An account identifier</strong> — the anonymous user identifier from Sign in with Apple, plus a
+      <li><strong>An account identifier</strong> — the user identifier from Apple or Google, plus a
         <strong>friend code</strong> (e.g. <code>VERB-XXXX</code>) we generate so friends can add you, and a private invite link/QR token you can share and
         regenerate.</li>
       <li><strong>Results you share with friends</strong> — a shared game result contains the mode, puzzle number, number
@@ -98,8 +98,10 @@
         push token, kept only while that setting is on. It is removed when you turn the setting off, sign out, or delete
         your account.</li>
     </ul>
-    <p><strong>We do not request or receive your email address.</strong> Sign in with Apple can hide your email
-      behind a private relay; Verbull doesn't ask for email at all.</p>
+    <p><strong>Email address.</strong> Sign in with Apple does not give us your email address — we don't request it, and
+      Apple can hide it behind a private relay in any case. <strong>Sign in with Google does provide the email address on
+      your Google account</strong>, and it is stored with your account by our authentication provider solely to identify
+      that account. It is never shown to other users, never used for marketing, and is deleted with your account.</p>
     <p><strong>Where this is stored.</strong> This information is held in our backend database, hosted by
       <strong>Supabase</strong> (a third-party infrastructure provider acting as our data processor on our behalf).
       It is transmitted over encrypted connections (HTTPS) and protected by row-level security so that only you and
@@ -138,8 +140,8 @@
       uploaded, or processed off your device.</p>
 
     <h2>Children's privacy</h2>
-    <p>Verbull is rated 4+ and contains no ads and no cross-app tracking. The optional account uses Sign in with
-      Apple. We do not knowingly collect personal information from children under 13 beyond the limited account data
+    <p>Verbull is rated 4+ and contains no ads and no cross-app tracking. The optional account uses Sign in with Apple or
+      Sign in with Google. We do not knowingly collect personal information from children under 13 beyond the limited account data
       described above, which is only ever created when a user signs in.</p>
 
     <h2>Data security</h2>
@@ -150,6 +152,8 @@
     <h2>Third parties</h2>
     <ul>
       <li><strong>Apple</strong> — for App Store purchases (StoreKit), Sign in with Apple, and (if enabled) push notifications.</li>
+      <li><strong>Google</strong> — for Sign in with Google, only if you choose it. Google's handling of the sign-in is governed by
+        <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
       <li><strong>Supabase</strong> — our backend host / data processor for the optional signed-in features.</li>
     </ul>
     <p>We do not integrate any third-party analytics, advertising, or tracking services.</p>
