@@ -31,7 +31,7 @@
     <div class="wrap">
       <div class="brand">Verbull</div>
       <h1>Privacy Policy</h1>
-      <div class="eff">Effective date: September 29, 2026</div>
+      <div class="eff">Effective date: October 26, 2026</div>
     </div>
   </header>
   <main>
@@ -42,7 +42,8 @@
       <strong>only</strong> time any data leaves your device is if you <strong>choose to sign in</strong>
       to use the optional <strong>social features</strong> (friends, duels, global leaderboard) — which also
       backs up your progress to your account. Even then, we don't run ads, we don't track you
-      across apps or websites, and we never sell your data.
+      across apps or websites, and we never sell your data. The website, verbull.app, also counts page views
+      without cookies (see Third parties).
     </div>
 
     <h2>Summary</h2>
@@ -54,7 +55,7 @@
         which case they are also backed up to your account so they survive a new phone (see below).</li>
       <li><strong>Signing in is opt-in.</strong> The social features require signing in with <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>. Only
         then do we collect the limited information described below, and only to make the social features work.</li>
-      <li><strong>No ads, no trackers, no cross-app tracking, no third-party analytics SDKs.</strong></li>
+      <li><strong>No ads, no cross-app tracking, no analytics SDKs in the app.</strong> The website counts page views without cookies (see Third parties).</li>
     </ul>
 
     <h2>Using Verbull without an account</h2>
@@ -87,11 +88,15 @@
         that off at any time in Settings.</li>
       <li><strong>Reactions</strong> — the emoji reactions you add to friends' posts.</li>
       <li><strong>Your connections</strong> — the friend links you create and any accounts you block.</li>
-      <li><strong>Game boards you play with others</strong> — for friend challenges, the weekly co-op board, and duels
-        against another player: your guess count and the colour pattern of your guesses (never the letters). In a duel,
-        your display name is shown to the other player only after you have both finished.</li>
+      <li><strong>Game boards you play with others</strong> — for friend challenges and duels against another player:
+        your guess count and the color pattern of your guesses (never the letters). For the weekly co-op board, the
+        words you guess are stored and shown to your partner. In a duel, your display name is shown to the other player
+        only after you have both finished.</li>
       <li><strong>Your progress backup</strong> — your streaks, game boards, flashcard/review progress, bookmarks, and
         per-day activity history, saved to your account so they survive a new phone. Only you can read your backup.</li>
+      <li><strong>Solve-rate reports</strong> — when you finish a daily puzzle while signed in, we record the mode, puzzle
+        number and number of guesses so the app can show how everyone did (for example, "62% solved it"). Other players
+        only ever see the totals.</li>
       <li><strong>Global leaderboard (separate opt-in)</strong> — if you choose to join, a public handle you pick and your
         games played, games won, and longest streak, visible to all players. You can rename or leave at any time.</li>
       <li><strong>Push token (separate opt-in)</strong> — if you turn on "Friend activity" notifications, your device's
@@ -108,6 +113,11 @@
       your friends can see your posts. We do <strong>not</strong> sell this data, use it for advertising, or use it
       to track you across other apps or websites.</p>
 
+    <h2>The verbull.app website</h2>
+    <p>The web puzzle saves your game and streak in your browser's local storage. If you sign in with Google on the
+      website, we also store your web game state (boards and streak) with your account so it syncs between browsers.
+      It is deleted with your account.</p>
+
     <h2>What we never collect</h2>
     <p>Regardless of whether you sign in, we do <strong>not</strong> collect your location, your contacts or address
       book (friends are added by code, QR, or invite link, never by reading your contacts), advertising identifiers, or any
@@ -118,7 +128,8 @@
       <li><strong>On-device data</strong> is removed when you delete the app.</li>
       <li><strong>Account data:</strong> you can <strong>sign out</strong> at any time. Choosing
         <strong>"Delete account"</strong> (Profile → Settings → Account) permanently removes your profile, posts,
-        reactions, friend connections, challenge/duel/co-op boards, progress backup, leaderboard entry, and push tokens
+        reactions, friend connections, challenge/duel/co-op boards, progress backup, solve-rate reports and web game state,
+        leaderboard entry, and push tokens
         from our backend. This cannot be undone.</li>
     </ul>
 
@@ -155,8 +166,14 @@
       <li><strong>Google</strong> — for Sign in with Google, only if you choose it. Google's handling of the sign-in is governed by
         <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
       <li><strong>Supabase</strong> — our backend host / data processor for the optional signed-in features.</li>
+      <li><strong>Vercel</strong> — hosts verbull.app and provides its cookieless page-view analytics.</li>
+      <li><strong>Google Fonts</strong> — the website loads its typefaces from Google, which receives your IP address when
+        a page loads.</li>
     </ul>
-    <p>We do not integrate any third-party analytics, advertising, or tracking services.</p>
+    <p>The Verbull app contains no third-party analytics, advertising, or tracking SDKs. The verbull.app website uses
+      Vercel Web Analytics, a cookieless service from our host Vercel, to count page views and basic game events (such
+      as a puzzle being started or shared). It does not use cookies, does not identify you across sites, and is not used
+      for advertising.</p>
 
     <h2>Changes to this policy</h2>
     <p>If this policy changes, we will update the effective date above and post the revised policy at this URL.
